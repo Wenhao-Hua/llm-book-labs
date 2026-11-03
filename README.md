@@ -1,0 +1,18 @@
+# 大模型：从理解到可靠应用 · 随书实验
+
+下载仓库的 ZIP 并解压，或使用 Git 克隆仓库。在 VS Code 中打开包含 `lab01.py` 的文件夹，从内置终端运行第一章实验。
+
+```console
+python lab01.py
+```
+
+打开生成的 `lab01-results.json`。比较两组构造回答的 `strict_ok` 计数，再检查修订版中仍然失败的案例。六条案例中，初版通过两条，修订版通过五条。
+
+| 阅读位置 | 实验入口 |
+| --- | --- |
+| 第 1 至 3 章 | 分别运行 `python lab01.py`、`python lab02.py`、`python lab03.py` |
+| 第 4 至 15 章 | 运行 `python labs.py --chapter 4`，将数字换为章号 |
+| 综合演练 | 运行 `python capstone.py` |
+| 附录预训练模型实验 | 按[环境与模型准备说明](real-experiments/README.txt)运行检索、分类微调和生成缓存实验 |
+
+逐章实验仅使用 Python 标准库，可在 CPU 上离线运行。附录实验首次需要下载依赖和固定版本的模型。已记录的运行环境为 Windows 和 Python 3.13.5。详细练习步骤见[从这里开始](从这里开始.txt)。
