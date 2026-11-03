@@ -1,0 +1,516 @@
+{
+  "model": {
+    "repo": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+    "files": {
+      "1_Pooling\\config.json": {
+        "bytes": 190,
+        "sha256": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23"
+      },
+      "config.json": {
+        "bytes": 612,
+        "sha256": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41"
+      },
+      "config_sentence_transformers.json": {
+        "bytes": 116,
+        "sha256": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3"
+      },
+      "model.safetensors": {
+        "bytes": 90868376,
+        "sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db"
+      },
+      "modules.json": {
+        "bytes": 349,
+        "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"
+      },
+      "README.md": {
+        "bytes": 10454,
+        "sha256": "7dfc82496ec33f906b5b0d6750c1e2397da6530c74d1ae3568c55bc2739125e7"
+      },
+      "sentence_bert_config.json": {
+        "bytes": 53,
+        "sha256": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7"
+      },
+      "special_tokens_map.json": {
+        "bytes": 112,
+        "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3"
+      },
+      "tokenizer.json": {
+        "bytes": 466247,
+        "sha256": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037"
+      },
+      "tokenizer_config.json": {
+        "bytes": 350,
+        "sha256": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b"
+      },
+      "vocab.txt": {
+        "bytes": 231508,
+        "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      }
+    }
+  },
+  "environment": {
+    "python": "3.13.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "threads": 4,
+    "device": "cpu",
+    "dtype": "float32",
+    "packages": {
+      "torch": "2.8.0+cpu",
+      "transformers": "4.56.0",
+      "huggingface-hub": "0.36.2",
+      "numpy": "2.2.6",
+      "tokenizers": "0.22.0",
+      "safetensors": "0.6.2"
+    },
+    "script_sha256": "4f56d987a46e4bef8f7ceb690016188d2932101d402a91f3f4a8532d1a05e7a1",
+    "data_sha256": "4867f293ff574248a81e235de5692bac9078294907d2be23ef943c2865cdd5ed"
+  },
+  "wall_seconds_including_load": 1.9504748999606818,
+  "result": {
+    "scope": "Real pretrained sentence embeddings on authored English teaching data; not Chinese retrieval or factual entailment evaluation.",
+    "embedding_shape": [
+      8,
+      384
+    ],
+    "max_length": 256,
+    "pooling": "attention-mask mean then L2 normalization",
+    "records": [
+      {
+        "id": "q1",
+        "text": "For how many days can a staff member borrow a camera?",
+        "role": "employee",
+        "relevant": [
+          "P2"
+        ],
+        "raw_ranking": [
+          {
+            "id": "P2",
+            "cosine": 0.836448073387146
+          },
+          {
+            "id": "P1",
+            "cosine": 0.8266479969024658
+          },
+          {
+            "id": "S1",
+            "cosine": 0.6413252353668213
+          },
+          {
+            "id": "P3",
+            "cosine": 0.4035906195640564
+          },
+          {
+            "id": "P7",
+            "cosine": 0.32825466990470886
+          },
+          {
+            "id": "P4",
+            "cosine": 0.28820767998695374
+          },
+          {
+            "id": "P6",
+            "cosine": 0.24069252610206604
+          },
+          {
+            "id": "P5",
+            "cosine": 0.2361036241054535
+          }
+        ],
+        "filtered_ranking": [
+          {
+            "id": "P2",
+            "cosine": 0.836448073387146
+          },
+          {
+            "id": "P3",
+            "cosine": 0.4035906195640564
+          },
+          {
+            "id": "P7",
+            "cosine": 0.32825466990470886
+          },
+          {
+            "id": "P4",
+            "cosine": 0.28820767998695374
+          },
+          {
+            "id": "P6",
+            "cosine": 0.24069252610206604
+          },
+          {
+            "id": "P5",
+            "cosine": 0.2361036241054535
+          }
+        ],
+        "raw_recall_at_1": 1.0,
+        "filtered_recall_at_1": 1.0,
+        "filtered_recall_at_3": 1.0
+      },
+      {
+        "id": "q2",
+        "text": "Who has to sponsor a guest borrowing equipment?",
+        "role": "visitor",
+        "relevant": [
+          "P3"
+        ],
+        "raw_ranking": [
+          {
+            "id": "P3",
+            "cosine": 0.8464121222496033
+          },
+          {
+            "id": "P4",
+            "cosine": 0.4159056544303894
+          },
+          {
+            "id": "P1",
+            "cosine": 0.3861304521560669
+          },
+          {
+            "id": "P2",
+            "cosine": 0.3753442168235779
+          },
+          {
+            "id": "P6",
+            "cosine": 0.2708914279937744
+          },
+          {
+            "id": "S1",
+            "cosine": 0.24940624833106995
+          },
+          {
+            "id": "P5",
+            "cosine": 0.2169722020626068
+          },
+          {
+            "id": "P7",
+            "cosine": 0.17860864102840424
+          }
+        ],
+        "filtered_ranking": [
+          {
+            "id": "P3",
+            "cosine": 0.8464121222496033
+          },
+          {
+            "id": "P4",
+            "cosine": 0.4159056544303894
+          },
+          {
+            "id": "P2",
+            "cosine": 0.3753442168235779
+          },
+          {
+            "id": "P6",
+            "cosine": 0.2708914279937744
+          },
+          {
+            "id": "P5",
+            "cosine": 0.2169722020626068
+          },
+          {
+            "id": "P7",
+            "cosine": 0.17860864102840424
+          }
+        ],
+        "raw_recall_at_1": 1.0,
+        "filtered_recall_at_1": 1.0,
+        "filtered_recall_at_3": 1.0
+      },
+      {
+        "id": "q3",
+        "text": "Who needs to authorize an extension of my loan?",
+        "role": "employee",
+        "relevant": [
+          "P4"
+        ],
+        "raw_ranking": [
+          {
+            "id": "P4",
+            "cosine": 0.4953600764274597
+          },
+          {
+            "id": "S1",
+            "cosine": 0.4102227985858917
+          },
+          {
+            "id": "P2",
+            "cosine": 0.38866856694221497
+          },
+          {
+            "id": "P1",
+            "cosine": 0.38322967290878296
+          },
+          {
+            "id": "P3",
+            "cosine": 0.3542284667491913
+          },
+          {
+            "id": "P6",
+            "cosine": 0.1258244514465332
+          },
+          {
+            "id": "P7",
+            "cosine": 0.0739760622382164
+          },
+          {
+            "id": "P5",
+            "cosine": 0.030546993017196655
+          }
+        ],
+        "filtered_ranking": [
+          {
+            "id": "P4",
+            "cosine": 0.4953600764274597
+          },
+          {
+            "id": "P2",
+            "cosine": 0.38866856694221497
+          },
+          {
+            "id": "P3",
+            "cosine": 0.3542284667491913
+          },
+          {
+            "id": "P6",
+            "cosine": 0.1258244514465332
+          },
+          {
+            "id": "P7",
+            "cosine": 0.0739760622382164
+          },
+          {
+            "id": "P5",
+            "cosine": 0.030546993017196655
+          }
+        ],
+        "raw_recall_at_1": 1.0,
+        "filtered_recall_at_1": 1.0,
+        "filtered_recall_at_3": 1.0
+      },
+      {
+        "id": "q4",
+        "text": "What should I do if the borrowed camera is broken?",
+        "role": "employee",
+        "relevant": [
+          "P5"
+        ],
+        "raw_ranking": [
+          {
+            "id": "P1",
+            "cosine": 0.5212780237197876
+          },
+          {
+            "id": "P2",
+            "cosine": 0.5053092241287231
+          },
+          {
+            "id": "S1",
+            "cosine": 0.43845897912979126
+          },
+          {
+            "id": "P5",
+            "cosine": 0.36338484287261963
+          },
+          {
+            "id": "P7",
+            "cosine": 0.23549945652484894
+          },
+          {
+            "id": "P4",
+            "cosine": 0.15458303689956665
+          },
+          {
+            "id": "P3",
+            "cosine": 0.1348360776901245
+          },
+          {
+            "id": "P6",
+            "cosine": 0.10160768777132034
+          }
+        ],
+        "filtered_ranking": [
+          {
+            "id": "P2",
+            "cosine": 0.5053092241287231
+          },
+          {
+            "id": "P5",
+            "cosine": 0.36338484287261963
+          },
+          {
+            "id": "P7",
+            "cosine": 0.23549945652484894
+          },
+          {
+            "id": "P4",
+            "cosine": 0.15458303689956665
+          },
+          {
+            "id": "P3",
+            "cosine": 0.1348360776901245
+          },
+          {
+            "id": "P6",
+            "cosine": 0.10160768777132034
+          }
+        ],
+        "raw_recall_at_1": 0.0,
+        "filtered_recall_at_1": 0.0,
+        "filtered_recall_at_3": 1.0
+      },
+      {
+        "id": "q5",
+        "text": "What do I need to get inside the storage room?",
+        "role": "employee",
+        "relevant": [
+          "P6"
+        ],
+        "raw_ranking": [
+          {
+            "id": "P6",
+            "cosine": 0.5123628377914429
+          },
+          {
+            "id": "P5",
+            "cosine": 0.22005996108055115
+          },
+          {
+            "id": "P7",
+            "cosine": 0.19436731934547424
+          },
+          {
+            "id": "P3",
+            "cosine": 0.193647101521492
+          },
+          {
+            "id": "P4",
+            "cosine": 0.08916798233985901
+          },
+          {
+            "id": "P1",
+            "cosine": 0.08757924288511276
+          },
+          {
+            "id": "S1",
+            "cosine": 0.07332304865121841
+          },
+          {
+            "id": "P2",
+            "cosine": 0.054802678525447845
+          }
+        ],
+        "filtered_ranking": [
+          {
+            "id": "P6",
+            "cosine": 0.5123628377914429
+          },
+          {
+            "id": "P5",
+            "cosine": 0.22005996108055115
+          },
+          {
+            "id": "P7",
+            "cosine": 0.19436731934547424
+          },
+          {
+            "id": "P3",
+            "cosine": 0.193647101521492
+          },
+          {
+            "id": "P4",
+            "cosine": 0.08916798233985901
+          },
+          {
+            "id": "P2",
+            "cosine": 0.054802678525447845
+          }
+        ],
+        "raw_recall_at_1": 1.0,
+        "filtered_recall_at_1": 1.0,
+        "filtered_recall_at_3": 1.0
+      },
+      {
+        "id": "q6",
+        "text": "Where and when should borrowed equipment be returned?",
+        "role": "employee",
+        "relevant": [
+          "P7"
+        ],
+        "raw_ranking": [
+          {
+            "id": "P7",
+            "cosine": 0.5553442239761353
+          },
+          {
+            "id": "P5",
+            "cosine": 0.48610907793045044
+          },
+          {
+            "id": "P3",
+            "cosine": 0.44506585597991943
+          },
+          {
+            "id": "P1",
+            "cosine": 0.43175527453422546
+          },
+          {
+            "id": "P4",
+            "cosine": 0.4199008345603943
+          },
+          {
+            "id": "P2",
+            "cosine": 0.40419983863830566
+          },
+          {
+            "id": "P6",
+            "cosine": 0.3248251676559448
+          },
+          {
+            "id": "S1",
+            "cosine": 0.32347771525382996
+          }
+        ],
+        "filtered_ranking": [
+          {
+            "id": "P7",
+            "cosine": 0.5553442239761353
+          },
+          {
+            "id": "P5",
+            "cosine": 0.48610907793045044
+          },
+          {
+            "id": "P3",
+            "cosine": 0.44506585597991943
+          },
+          {
+            "id": "P4",
+            "cosine": 0.4199008345603943
+          },
+          {
+            "id": "P2",
+            "cosine": 0.40419983863830566
+          },
+          {
+            "id": "P6",
+            "cosine": 0.3248251676559448
+          }
+        ],
+        "raw_recall_at_1": 1.0,
+        "filtered_recall_at_1": 1.0,
+        "filtered_recall_at_3": 1.0
+      }
+    ],
+    "negation_texts": [
+      "Employees may borrow cameras.",
+      "Employees may not borrow cameras."
+    ],
+    "negation_cosine": 0.8345665335655212,
+    "padding_max_abs_difference": 6.705522537231445e-08,
+    "mean_filtered_recall_at_1": 0.8333333333333334,
+    "mean_filtered_recall_at_3": 1.0
+  }
+}

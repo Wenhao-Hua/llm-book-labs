@@ -1,0 +1,7 @@
+# Tested direct dependencies; install the CPU torch wheel separately as in README.txt.
+# This is not a hash-locked complete transitive dependency environment.
+transformers==4.56.0
+huggingface-hub==0.36.2
+numpy==2.2.6
+tokenizers==0.22.0
+safetensors==0.6.2

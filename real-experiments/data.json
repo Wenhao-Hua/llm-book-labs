@@ -1,0 +1,65 @@
+{
+  "provenance": "Original English teaching fixtures authored for this book on 2026-10-27. Fictional institution; not independently sampled user data. All labels and settings fixed before the first run.",
+  "documents": [
+    {"id":"P1","text":"Old camera loan policy: employees can borrow a camera for fourteen days.","current":false,"roles":["employee","visitor"]},
+    {"id":"P2","text":"Current camera loan policy: employees can borrow a camera for seven days.","current":true,"roles":["employee","visitor"]},
+    {"id":"P3","text":"Visitors need an employee sponsor before borrowing equipment.","current":true,"roles":["employee","visitor"]},
+    {"id":"P4","text":"Renewing an equipment loan requires approval from an administrator.","current":true,"roles":["employee","visitor"]},
+    {"id":"S1","text":"Administrator exception: camera loans may last fourteen days after a special review.","current":true,"roles":["admin"]},
+    {"id":"P5","text":"Damaged equipment must be reported to the maintenance team.","current":true,"roles":["employee","visitor"]},
+    {"id":"P6","text":"An access badge is required to enter the equipment storage room.","current":true,"roles":["employee","visitor"]},
+    {"id":"P7","text":"Equipment must be returned to the service desk before closing time.","current":true,"roles":["employee","visitor"]}
+  ],
+  "queries": [
+    {"id":"q1","text":"For how many days can a staff member borrow a camera?","role":"employee","relevant":["P2"]},
+    {"id":"q2","text":"Who has to sponsor a guest borrowing equipment?","role":"visitor","relevant":["P3"]},
+    {"id":"q3","text":"Who needs to authorize an extension of my loan?","role":"employee","relevant":["P4"]},
+    {"id":"q4","text":"What should I do if the borrowed camera is broken?","role":"employee","relevant":["P5"]},
+    {"id":"q5","text":"What do I need to get inside the storage room?","role":"employee","relevant":["P6"]},
+    {"id":"q6","text":"Where and when should borrowed equipment be returned?","role":"employee","relevant":["P7"]}
+  ],
+  "classification": {
+    "labels":{"0":"request for information only","1":"request to create or change a loan record; requires downstream authorization"},
+    "train":[
+      {"text":"What is the maximum camera loan period?","label":0},
+      {"text":"Who approves equipment renewals?","label":0},
+      {"text":"Where can I read the borrowing rules?","label":0},
+      {"text":"Do visitors need a sponsor?","label":0},
+      {"text":"When does the service desk close?","label":0},
+      {"text":"How can I report broken equipment?","label":0},
+      {"text":"Explain the camera return policy.","label":0},
+      {"text":"Tell me what documents are required.","label":0},
+      {"text":"Is a badge needed for the storage room?","label":0},
+      {"text":"Can you describe the renewal process?","label":0},
+      {"text":"I only want to know the rules for a tripod.","label":0},
+      {"text":"What happens if I return a lens late?","label":0},
+      {"text":"Please submit a camera loan application for me.","label":1},
+      {"text":"Book a tripod for tomorrow.","label":1},
+      {"text":"Cancel my existing equipment reservation.","label":1},
+      {"text":"Extend my current camera loan.","label":1},
+      {"text":"Create a new application for a lens.","label":1},
+      {"text":"Reserve the microphone for Friday.","label":1},
+      {"text":"Change my return date to Monday.","label":1},
+      {"text":"Send my renewal request to the administrator.","label":1},
+      {"text":"Apply for a seven day camera loan.","label":1},
+      {"text":"Update the equipment number in my application.","label":1},
+      {"text":"Withdraw the application I submitted yesterday.","label":1},
+      {"text":"Make a reservation for a projector.","label":1}
+    ],
+    "holdout":[
+      {"text":"How long may staff keep a borrowed camera?","label":0},
+      {"text":"Which person is responsible for approving an extension?","label":0},
+      {"text":"Does a guest have to find an employee guarantor?","label":0},
+      {"text":"Give me an overview of the lending procedure.","label":0},
+      {"text":"I am asking about cancellation rules, not asking you to cancel anything.","label":0},
+      {"text":"Tell me whether a damaged lens must be reported.","label":0},
+      {"text":"Lodge a request to borrow the video camera.","label":1},
+      {"text":"Remove the booking I made for next week.","label":1},
+      {"text":"Move my return deadline to Tuesday.","label":1},
+      {"text":"Put in a reservation for the audio recorder.","label":1},
+      {"text":"Please forward my application for approval.","label":1},
+      {"text":"I would like you to register a new loan for me.","label":1}
+    ]
+  },
+  "cache_prompt":"The equipment policy states that employees may borrow a camera for seven days. A visitor needs an employee sponsor. The assistant should explain the rules before taking any action."
+}

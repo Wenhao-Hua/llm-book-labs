@@ -1,0 +1,18 @@
+{
+  "python": "3.13.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+  "threads": 4,
+  "device": "cpu",
+  "dtype": "float32",
+  "packages": {
+    "torch": "2.8.0+cpu",
+    "transformers": "4.56.0",
+    "huggingface-hub": "0.36.2",
+    "numpy": "2.2.6",
+    "tokenizers": "0.22.0",
+    "safetensors": "0.6.2"
+  },
+  "script_sha256": "4f56d987a46e4bef8f7ceb690016188d2932101d402a91f3f4a8532d1a05e7a1",
+  "data_sha256": "4867f293ff574248a81e235de5692bac9078294907d2be23ef943c2865cdd5ed"
+}

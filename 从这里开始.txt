@@ -1,0 +1,16 @@
+﻿读者试读包 · 从这里开始
+
+先解压整个 ZIP，再打开书稿 PDF。用 VS Code 的“文件 → 打开文件夹”选择含 lab01.py 的目录，在“终端 → 新建终端”输入下面的命令。Windows + Python 3.13.5 为已记录的运行环境。先运行 python --version 确认终端能找到 Python。第 1—15 章和综合练习只用 Python 标准库，可以离线在 CPU 上运行。
+
+第一次实验 · 第 1 章
+python lab01.py
+打开新生成的 lab01-results.json，比较 faulty 和 revised 中的 counts.strict_ok。六条构造案例中，各项检查同时通过的条数分别是 2 和 5。到 revised.rows 找到 strict_ok 为 false 的那一行，记下 id，再查 cases 中同一 id 的预期回答。试着解释为什么来源正确仍可能回答错误。这里比较的是人工构造输出的评分结果。
+
+按章运行
+第 2、3 章分别运行 python lab02.py 和 python lab03.py。
+第 4—15 章运行 python labs.py --chapter 4，把 4 换成所读章号。第 8 章对应 python labs.py --chapter 8。生成的 labNN-results.json 就在脚本旁边。
+读完全书运行 python capstone.py，打开 capstone-results.json 查看设备借用流程。
+检查改动可以运行相应脚本加 --self-test，例如 python lab01.py --self-test。
+
+附录的三个真实模型实验
+请先打开 real-experiments/README.txt。里面包含独立环境配置、模型下载、运行命令、对照结果和复盘问题。首次获取依赖和模型需要网络。为保留参考结果，自己的运行输出使用说明中的 my-results 目录。
