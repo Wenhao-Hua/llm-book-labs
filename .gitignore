@@ -5,3 +5,5 @@ checks/
 lab*-results.json
 capstone-results.json
 real-experiments/my-results/
+
+deepening-results.json

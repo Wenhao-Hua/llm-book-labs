@@ -14,3 +14,6 @@ python lab01.py
 
 附录的三个真实模型实验
 请先打开 real-experiments/README.txt。里面包含独立环境配置、模型下载、运行命令、对照结果和复盘问题。首次获取依赖和模型需要网络。为保留参考结果，自己的运行输出使用说明中的 my-results 目录。
+
+复算正文中的分析案例
+运行 python deepening_examples.py，打开 deepening-results.json。按章号查看生成路径、预算选择、证据完整率等 11 组数值结果。它们都是人工构造的机制案例，可以先手算，再修改一个输入观察变化；不要当作真实模型的测试成绩。
